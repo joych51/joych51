@@ -15,57 +15,26 @@ const Footer = () => {
         <FooterLinkContainer>
           <FooterLinkWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-                <FooterLink to = "/signin">How it works</FooterLink>
-                <FooterLink to = "/signin">Testimonials</FooterLink>
-                <FooterLink to = "/signin">Careers</FooterLink>
-                <FooterLink to = "/signin">Investors</FooterLink>
-                <FooterLink to = "/signin">Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact us</FooterLinkTitle>
-                <FooterLink to = "/signin">Contact</FooterLink>
-                <FooterLink to = "/signin">Support</FooterLink>
-                <FooterLink to = "/signin">Destinations</FooterLink>
-                <FooterLink to = "/signin">Sponsor</FooterLink>
-                <FooterLink to = "/signin"></FooterLink>
-            </FooterLinkItems>
-          </FooterLinkWrapper>
-          <FooterLinkWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-                <FooterLink to = "/signin">Submit Video</FooterLink>
-                <FooterLink to = "/signin">Ambassadors</FooterLink>
-                <FooterLink to = "/signin">Agency</FooterLink>
-                <FooterLink to = "/signin">Influencer</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
+
               <FooterLinkTitle>Social Media</FooterLinkTitle>
-                <FooterLink to = "/signin">Instagram</FooterLink>
-                <FooterLink to = "/signin">Facebook</FooterLink>
-                <FooterLink to = "/signin">Youtube</FooterLink>
-                <FooterLink to = "/signin">Twitter</FooterLink>
+                <FooterLink to = "https://www.instagram.com/joych51/">Instagram</FooterLink>
+                <FooterLink to = "https://www.facebook.com/junsoeng.lee">Facebook</FooterLink>
+                <FooterLink to = "https://www.linkedin.com/in/junsoeng-lee-6745791b2/">LinkedIn</FooterLink>
             </FooterLinkItems>
           </FooterLinkWrapper>
         </FooterLinkContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to = '/' onClick = { toggleHome }>dolla</SocialLogo>
-            <WebsiteRights>dolla ⓒ { new Date().getFullYear() } All rights reserved.</WebsiteRights>
+            <SocialLogo to = '/' onClick = { toggleHome }>Eddie Lee</SocialLogo>
+            <WebsiteRights>Eddie ⓒ { new Date().getFullYear() } All rights reserved.</WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href ="/" target = "_blank" aria-label = "Facebook">
+              <SocialIconLink href ="https://www.facebook.com/junsoeng.lee" target = "_blank" aria-label = "Facebook">
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href ="/" target = "_blank" aria-label = "Instagram">
+              <SocialIconLink href ="https://www.instagram.com/joych51/" target = "_blank" aria-label = "Instagram">
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href ="/" target = "_blank" aria-label = "YouTube">
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink href ="/" target = "_blank" aria-label = "Twitter">
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href ="/" target = "_blank" aria-label = "LinkedIn">
+              <SocialIconLink href ="https://www.linkedin.com/in/junsoeng-lee-6745791b2/" target = "_blank" aria-label = "LinkedIn">
                 <FaLinkedin />
               </SocialIconLink>
               </SocialIcons>

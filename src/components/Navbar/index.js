@@ -17,8 +17,12 @@ import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks,
       window.addEventListener('scroll', changeNav)
     }, [])
 
-    const toggleHome =() => {
+    const toggleHome = () => {
       scroll.scrollToTop();
+    }
+
+    const toggleFooter = () => {
+      scroll.scrollToBottom();
     }
 
     return (
@@ -34,7 +38,7 @@ import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks,
                 <NavItem> <NavLinks to = "skill" smooth = { true } duration = { 500 } spy = { true } exact = 'true' offset ={ -80 }>Skill</NavLinks> </NavItem>
                 <NavItem> <NavLinks to = "experience" smooth = { true } duration = { 500 } spy = { true } exact = 'true' offset ={ -80 }>Experience</NavLinks> </NavItem>
               </NavMenu>
-              <NavBtn> <NavBtnLink to = "contact">Contact</NavBtnLink> </NavBtn>
+              <NavBtn onClick = { toggleFooter }> <NavBtnLink>Contact</NavBtnLink> </NavBtn>
             </NavbarContainer>
           </Nav>
         </IconContext.Provider>

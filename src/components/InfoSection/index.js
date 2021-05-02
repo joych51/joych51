@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '../ButtonElements';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2,
         TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements';
-import { animateScroll as scroll } from 'react-scroll';
 
 const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headLine, darkText,
-                    description, buttonLabel, img, alt, primary, dark, dark2 }) => {
+                    description, buttonLabel, img, alt, primary, dark, dark2, toggle }) => {
 
-  const toggle = () => {
-    scroll.scrollToTop();
-  }
+  const [scrollNav, setScrollNav] = useState(false);
 
+    const changeNav = () => {
+      if(window.scrollY >= 80) setScrollNav(true);
+      else setScrollNav(false);
+    }
+
+    useEffect(() => {
+      window.addEventListener('scroll', changeNav)
+    }, [])
   return (
     <>
       <InfoContainer lightBg = { lightBg } id = { id }>
@@ -21,8 +26,8 @@ const InfoSection = ({ lightBg, id, imgStart, topLine, lightText, headLine, dark
                 <TopLine>{ topLine }</TopLine>
                 <Heading lightText = { lightText }>{ headLine }</Heading>
                 <Subtitle darkText = { darkText }>{ description }</Subtitle>
-                <BtnWrap>
-                  <Button to = "home"
+                <BtnWrap scrollNav = { scrollNav }>
+                  <Button to = "resume"
                    smooth = { true }
                    duration = { 500 }
                    spy = { true }
