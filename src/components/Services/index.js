@@ -1,6 +1,6 @@
 import React from "react";
 import icon1 from '../../images/C++.svg';
-import icon2 from '../../images/Java.png';
+import icon2 from '../../images/Java.svg';
 import icon3 from '../../images/frontend.png';
 import { ServicesContainer, ServicesH1, ServicesWrapper,
         ServicesCard, ServicesIcon, ServicesH2, ServicesP } from "./ServicesElements"

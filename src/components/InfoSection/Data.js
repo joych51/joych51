@@ -1,3 +1,6 @@
+import DownloadLink from "react-download-link";
+import { Link } from 'react-router-dom';
+
 export const homeObjOne = {
   id: 'about',
   lightBg: false,
@@ -22,8 +25,8 @@ export const homeObjTwo = {
   lightTextDesc: false,
   topLine: 'RESUME',
   headLine: 'Thanks for your interest',
-  description: 'Please click \'Download\' to download my resume file !',
-  buttonLabel: 'Download',
+  description: 'Please click \'Here\' to view larger !',
+  buttonLabel: <Link to = 'https://github.com/joych51/portfolio/blob/main/JUNSOENG%20LEE%20Resume.pdf' style = {{color: "white", textDecoration: "none"}}>Move</Link>,
   imgStart: true,
   img: require('../../images/resume.png').default,
   alt: 'Piggybank',
@@ -42,7 +45,7 @@ export const homeObjThree = {
   description: 'Currently working for Antra as part of a team to manipulate websites for dynamic interfaces.',
   buttonLabel: 'For more',
   imgStart: false,
-  img: require('../../images/svg-4.svg').default,
+  img: require('../../images/svg-5.svg').default,
   alt: 'Paper',
   dark: false,
   primary: false,
